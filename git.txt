@@ -1,0 +1,145 @@
+mj
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git (master)
+$ mkdir learn-git-again
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git (master)
+$ cd learn-git-again
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ touch thirt.txt
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git init
+Initialized empty Git repository in C:/Users/Amine/Desktop/git/learn-git-again/.git/
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ .add third.txt
+bash: .add: command not found
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git add third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git add thirt.txt
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ addidng thirt.txt
+bash: addidng: command not found
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git commit thirt.txt
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Amine@DESKTOP-01OJGHB.(none)')
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git commit-m 'thirt.txt'
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git rev-list
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --[no-]object-names
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ touch fourth.txt
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git add fourth.txt
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ rm thirt.txt
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git commit remove thirt.txt
+error: pathspec 'remove' did not match any file(s) known to git
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git commit-m "remove thirt.txt"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git checkout
+fatal: You are on a branch yet to be born
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git config --global user.name"amine"
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git config --global user.name"amine-akermi"
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git config --global user.email johndoe@example.com
+
+Amine@DESKTOP-01OJGHB MINGW64 ~/Desktop/git/learn-git-again (master)
+$ git config --global amine-akerm.email "estamine11@live.com"
